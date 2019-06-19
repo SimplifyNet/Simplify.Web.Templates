@@ -8,6 +8,9 @@ clone_depth: 1
 configuration: Release
 platform: Any CPU
 
+before_build:
+  - cmd: 'dotnet restore Simplify.Web.Templates.sln'
+ 
 build:
   project: Simplify.Web.Templates.sln 
   verbosity: minimal
