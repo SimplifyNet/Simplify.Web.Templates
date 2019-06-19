@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Minimal
+namespace MyProject.Minimal
 {
 	public class Program
 	{

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netcoreapp2.2</TargetFramework>
+
+		<PackageType>Template</PackageType>
+		<PackageVersion>1.0</PackageVersion>
+		<PackageId>Simplify.Web.Templates</PackageId>
+		<IsPackable>true</IsPackable>
+
+		<Title>Simplify.Web project templates</Title>
+		<Authors>Alexander Krylkov</Authors>
+		<Description>The Simplify.Web web framework project templates collection.</Description>
+		<Tags>templates;simplify-web;web</Tags>
+
+		<IncludeContentInPack>true</IncludeContentInPack>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<ContentTargetFolders>content</ContentTargetFolders>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+		<Compile Remove="**\*" />
+	</ItemGroup>
+</Project>

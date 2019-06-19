@@ -1,7 +1,7 @@
 ﻿using Simplify.Web;
 using Simplify.Web.Attributes;
 
-namespace Minimal.Controllers
+namespace MyProject.Minimal.Controllers
 {
 	[Get("/")]
 	public class DefaultController : Controller

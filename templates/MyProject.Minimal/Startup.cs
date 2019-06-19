@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Simplify.Web.Owin;
 
-namespace Minimal
+namespace MyProject.Minimal
 {
 	public class Startup
 	{
