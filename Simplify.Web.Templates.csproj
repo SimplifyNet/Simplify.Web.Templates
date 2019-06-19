@@ -6,6 +6,10 @@
 		<PackageVersion>0.1</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
+		<PackageProjectUrl>https://github.com/i4004/Simplify.Web.Templates</PackageProjectUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/i4004/Simplify.Web/master/Images/Icon.png</PackageIconUrl>
+		<RepositoryUrl>https://github.com/i4004/Simplify.Web.Templates</RepositoryUrl>
+		<RepositoryType>GIT</RepositoryType>
 
 		<Title>Simplify.Web project templates</Title>
 		<Authors>Alexander Krylkov</Authors>
