@@ -20,4 +20,4 @@ after_build:
   - cmd: 'dotnet pack Simplify.Web.Templates.csproj'
   
 artifacts:
-  - path: '**\*.nupkg'
+  - path: 'bin\Any CPU\Release\*.nupkg'
