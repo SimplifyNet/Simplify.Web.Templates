@@ -14,3 +14,4 @@ before_build:
 build:
   project: Simplify.Web.Templates.sln 
   verbosity: minimal
+  publish_nuget: true
