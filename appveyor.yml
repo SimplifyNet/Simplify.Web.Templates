@@ -9,6 +9,5 @@ configuration: Release
 platform: Any CPU
 
 build:
-  publish_nuget: true
-  parallel: true
+  project: Simplify.Web.Templates.sln 
   verbosity: minimal
