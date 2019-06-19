@@ -3,7 +3,7 @@
 		<TargetFramework>netcoreapp2.2</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>1.0</PackageVersion>
+		<PackageVersion>0.1</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
 
