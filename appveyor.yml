@@ -1,0 +1,14 @@
+version: '{build}'
+
+image: Visual Studio 2017
+
+skip_tags: true
+clone_depth: 1
+
+configuration: Release
+platform: Any CPU
+
+build:
+  publish_nuget: true
+  parallel: true
+  verbosity: minimal
