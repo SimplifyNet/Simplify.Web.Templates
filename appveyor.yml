@@ -14,7 +14,6 @@ before_build:
 build:
   project: Simplify.Web.Templates.sln 
   verbosity: minimal
-  publish_nuget: true
 
 after_build:
   - cmd: 'dotnet pack Simplify.Web.Templates.csproj'
