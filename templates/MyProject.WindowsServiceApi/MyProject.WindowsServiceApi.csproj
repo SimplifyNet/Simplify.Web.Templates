@@ -9,7 +9,7 @@
 		<PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
 		<PackageReference Include="Simplify.Web.Json" Version="1.2.0" />
 		<PackageReference Include="Simplify.WindowsServices" Version="2.8.0" />
-		<PackageReference Include="Simplify.DI.Provider.SimpleInjector" Version="1.4.0" />
+		<PackageReference Include="Simplify.DI" Version="2.1" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Update="appsettings.Development.json">

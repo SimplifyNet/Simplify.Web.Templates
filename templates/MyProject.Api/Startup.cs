@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Hosting;
 using MyProject.Api.Setup;
 using Simplify.DI;
-using Simplify.DI.Provider.SimpleInjector;
 using Simplify.Web.Json.ModelBinding.Binders;
 using Simplify.Web.ModelBinding;
 using Simplify.Web.Owin;
@@ -13,7 +12,7 @@ namespace MyProject.Api
 	{
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
-			InitializeContainer();
+			IocRegistrations.Register();
 
 			if (env.IsDevelopment())
 				app.UseDeveloperExceptionPage();
@@ -23,20 +22,8 @@ namespace MyProject.Api
 
 			app.UseSimplifyWeb();
 
-			VerifyContainer();
-		}
-
-		private static void InitializeContainer()
-		{
-			DIContainer.Current = new SimpleInjectorDIProvider();
-
-			IocRegistrations.Register();
-		}
-
-		private static void VerifyContainer()
-		{
 			// IOC container dependencies graph verification
-			((SimpleInjectorDIProvider)DIContainer.Current).Container.Verify();
+			DIContainer.Current.Verify();
 		}
 	}
 }

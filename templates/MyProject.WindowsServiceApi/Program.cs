@@ -1,7 +1,6 @@
 ﻿using System;
 using MyProject.WindowsServiceApi.Setup;
 using Simplify.DI;
-using Simplify.DI.Provider.SimpleInjector;
 using Simplify.WindowsServices;
 
 namespace MyProject.WindowsServiceApi
@@ -31,12 +30,10 @@ namespace MyProject.WindowsServiceApi
 
 		private static void InitializeContainer()
 		{
-			DIContainer.Current = new SimpleInjectorDIProvider();
-
 			IocRegistrations.Register();
 
 			// IOC container dependencies graph verification
-			((SimpleInjectorDIProvider)DIContainer.Current).Container.Verify();
+			DIContainer.Current.Verify();
 		}
 	}
 }
