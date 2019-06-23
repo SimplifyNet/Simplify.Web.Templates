@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.Api", "templates\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.WindowsServiceApi", "templates\MyProject.WindowsServiceApi\MyProject.WindowsServiceApi.csproj", "{E293C3EB-0830-4AA3-93FE-42E4B89847AA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.Angular", "templates\MyProject.Angular\MyProject.Angular.csproj", "{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E293C3EB-0830-4AA3-93FE-42E4B89847AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E293C3EB-0830-4AA3-93FE-42E4B89847AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E293C3EB-0830-4AA3-93FE-42E4B89847AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
