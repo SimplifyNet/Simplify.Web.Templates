@@ -3,7 +3,7 @@
 		<TargetFramework>netcoreapp2.2</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.2</PackageVersion>
+		<PackageVersion>0.3</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/i4004/Simplify.Web.Templates</PackageProjectUrl>
@@ -11,8 +11,7 @@
 		<RepositoryUrl>https://github.com/i4004/Simplify.Web.Templates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
-			+ API template
-			+ API hosted in windows service template
+			+ Angular template
 			* Minor fixes
 		</PackageReleaseNotes>
 		<Title>Simplify.Web project templates</Title>
