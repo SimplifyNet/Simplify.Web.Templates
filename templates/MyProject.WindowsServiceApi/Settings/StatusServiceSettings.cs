@@ -1,5 +1,5 @@
-﻿using System.Linq;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
+using System.Linq;
 
 namespace MyProject.WindowsServiceApi.Settings
 {
