@@ -1,4 +1,3 @@
-using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
@@ -7,6 +6,7 @@ using MyProject.Angular.Setup;
 using Simplify.DI;
 using Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection;
 using Simplify.Web.Owin;
+using System;
 
 namespace MyProject.Angular
 {
@@ -38,7 +38,7 @@ namespace MyProject.Angular
 
 			app.UseSpaStaticFiles();
 
-			app.UseSimplifyWebNonTerminal();
+			app.UseSimplifyWebNonTerminalWithoutRegistrations();
 
 			app.UseSpa(spa =>
 			{
