@@ -16,6 +16,7 @@
 			* Upgrade Simplify.Web.Json 1.2.4
 			* Upgrade to Simplify.WindowsServices 2.10
 			* Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection 1.2
+			Bug Fixes
 			* Missing launchSettings.json added
 		</PackageReleaseNotes>
 		<Title>Simplify.Web project templates</Title>
