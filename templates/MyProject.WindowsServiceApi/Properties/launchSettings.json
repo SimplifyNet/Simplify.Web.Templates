@@ -1,0 +1,16 @@
+{
+	"profiles":
+	{
+		"MyProject.WindowsServiceApi":
+		{
+			"commandName": "Project",
+			"commandLineArgs": "console",
+			"environmentVariables":
+			{
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			},
+			"launchBrowser": true,
+			"applicationUrl": "http://localhost:8080/"
+		}
+	}
+}
