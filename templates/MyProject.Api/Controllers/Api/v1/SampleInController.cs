@@ -15,7 +15,7 @@ namespace MyProject.Api.Controllers.Api.v1
 			{
 				Trace.WriteLine($"Object with message received: {Model.Message}");
 
-				return Ajax();
+				return NoContent();
 			}
 			catch (Exception e)
 			{
