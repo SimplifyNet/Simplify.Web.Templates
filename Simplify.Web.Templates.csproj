@@ -3,16 +3,19 @@
 		<TargetFramework>netcoreapp2.2</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.4</PackageVersion>
+		<PackageVersion>0.5</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
-		<PackageProjectUrl>https://github.com/i4004/Simplify.Web.Templates</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/i4004/Simplify.Web/master/Images/Icon.png</PackageIconUrl>
-		<RepositoryUrl>https://github.com/i4004/Simplify.Web.Templates</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</PackageProjectUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
+		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
-			+ Upgrade to Simplidy.Web 2.2
-			* Minor fixes
+			Updates
+			* Upgrade to Simplify.Web 2.3
+			* Upgrade Simplify.Web.Json 1.2.4
+			* Upgrade to Simplify.WindowsServices 2.10
+			* Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection 1.2
 		</PackageReleaseNotes>
 		<Title>Simplify.Web project templates</Title>
 		<Authors>Alexander Krylkov</Authors>

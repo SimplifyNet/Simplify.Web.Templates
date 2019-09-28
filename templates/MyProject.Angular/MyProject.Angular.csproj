@@ -13,8 +13,8 @@
 		<PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.2.0" />
-		<PackageReference Include="Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection" Version="1.1.0" />
-		<PackageReference Include="Simplify.Web.Json" Version="1.2.3" />
+		<PackageReference Include="Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection" Version="1.2.0" />
+		<PackageReference Include="Simplify.Web.Json" Version="1.2.4" />
 	</ItemGroup>
 	<ItemGroup>
 		<!-- Don't publish the SPA source files, but do show them in the project files list -->
