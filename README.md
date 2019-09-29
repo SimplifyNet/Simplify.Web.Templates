@@ -1,12 +1,11 @@
 # Simplify.Web.Templates
 
-Visual studio project templates for Simplify.Web web framework
+Visual studio project templates for Simplify.Web web framework.
 
-## Package status
-
-| Latest version   |                              [![Nuget version](http://img.shields.io/badge/nuget-v0.5-blue.svg)](https://www.nuget.org/packages/Simplify.Web.Templates/)                               |
-| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Dependencies** | [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Templates.svg)](https://libraries.io/nuget/Simplify.Web.Templates) |
+[![Nuget version](http://img.shields.io/nuget/vpre/Simplify.Web.Templates)](https://www.nuget.org/packages/Simplify.Web.Templates/)
+[![Nuget](https://img.shields.io/nuget/dt/Simplify.Web.Templates)](https://www.nuget.org/packages/Simplify.Web.Templates/)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Templates)](https://libraries.io/nuget/Simplify.Web.Templates)
+[![AppVeyor](https://img.shields.io/appveyor/ci/i4004/simplify-web-templates)](https://ci.appveyor.com/project/i4004/simplify-web-templates)
 
 ## Templates packages installation
 
