@@ -3,7 +3,7 @@
 [![Nuget version](http://img.shields.io/nuget/vpre/Simplify.Web.Templates)](https://www.nuget.org/packages/Simplify.Web.Templates/)
 [![Nuget](https://img.shields.io/nuget/dt/Simplify.Web.Templates)](https://www.nuget.org/packages/Simplify.Web.Templates/)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/nuget/Simplify.Web.Templates)](https://libraries.io/nuget/Simplify.Web.Templates)
-[![AppVeyor](https://img.shields.io/appveyor/ci/i4004/simplify-web-templates)](https://ci.appveyor.com/project/i4004/simplify-web-templates)
+[![AppVeyor](https://img.shields.io/appveyor/ci/i4004/simplify-web-templates/master)](https://ci.appveyor.com/project/i4004/simplify-web-templates)
 
 Visual studio project templates for Simplify.Web web framework.
 
