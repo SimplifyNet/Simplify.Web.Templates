@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyProject.Api.Setup;
 using Simplify.DI;
@@ -25,6 +27,12 @@ namespace MyProject.Api
 
 			// IOC container dependencies graph verification
 			DIContainer.Current.Verify();
+		}
+
+		public void ConfigureServices(IServiceCollection services)
+		{
+			services.Configure<KestrelServerOptions>(options => { options.AllowSynchronousIO = true; });
+			services.Configure<IISServerOptions>(options => { options.AllowSynchronousIO = true; });
 		}
 	}
 }
