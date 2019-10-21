@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
@@ -5,8 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MyProject.Angular.Setup;
 using Simplify.DI;
 using Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection;
-using Simplify.Web.Owin;
-using System;
+using Simplify.Web;
 
 namespace MyProject.Angular
 {

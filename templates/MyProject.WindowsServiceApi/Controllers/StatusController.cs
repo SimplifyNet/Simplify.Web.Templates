@@ -9,7 +9,7 @@ namespace MyProject.WindowsServiceApi.Controllers
 	{
 		public override ControllerResponse Invoke()
 		{
-			return new Ajax("Service is running!");
+			return new Content("Service is running!");
 		}
 	}
 }

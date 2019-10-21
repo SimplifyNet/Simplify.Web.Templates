@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Simplify.Web;
 using Simplify.Web.Json.ModelBinding.Binders;
-using Simplify.Web.ModelBinding;
-using Simplify.Web.Owin;
+using Simplify.Web.Model;
 
 namespace MyProject.WindowsServiceApi
 {

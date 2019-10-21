@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using MyProject.Api.Setup;
 using Simplify.DI;
+using Simplify.Web;
 using Simplify.Web.Json.ModelBinding.Binders;
-using Simplify.Web.ModelBinding;
-using Simplify.Web.Owin;
+using Simplify.Web.Model;
 
 namespace MyProject.Api
 {
 	public class Startup
 	{
-		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
 			IocRegistrations.Register();
 
