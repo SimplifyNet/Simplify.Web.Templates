@@ -1,5 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
-using System.Linq;
+﻿using System.Linq;
+using Microsoft.Extensions.Configuration;
 
 namespace MyProject.WindowsServiceApi.Settings
 {
@@ -12,14 +12,16 @@ namespace MyProject.WindowsServiceApi.Settings
 			if (!config.GetChildren().Any())
 				return;
 
-			var bindHostName = config["BindHostName"];
+			var bindHostName = config[nameof(BindHostName)];
 
 			if (!string.IsNullOrEmpty(bindHostName))
 				BindHostName = bindHostName;
 
-			var workingPort = config["WorkingPort"];
+			var workingPort = config[nameof(WorkingPort)];
 
-			if (string.IsNullOrEmpty(workingPort)) return;
+			if (string.IsNullOrEmpty(workingPort))
+				return;
+
 			if (int.TryParse(workingPort, out var buffer))
 				WorkingPort = buffer;
 		}

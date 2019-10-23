@@ -19,11 +19,17 @@ namespace MyProject.WindowsServiceApi
 
 			InitializeContainer();
 
-			if (new BasicServiceHandler<WebApplicationStartup>().Start(args))
-				return;
+			using var handler = new BasicServiceHandler<WebApplicationStartup>();
 
-			using (var scope = DIContainer.Current.BeginLifetimeScope())
-				scope.Resolver.Resolve<WebApplicationStartup>().Run();
+			if (!handler.Start(args))
+				RunAsConsoleApplication();
+		}
+
+		private static void RunAsConsoleApplication()
+		{
+			using var scope = DIContainer.Current.BeginLifetimeScope();
+
+			scope.Resolver.Resolve<WebApplicationStartup>().Run();
 
 			Console.ReadLine();
 		}
