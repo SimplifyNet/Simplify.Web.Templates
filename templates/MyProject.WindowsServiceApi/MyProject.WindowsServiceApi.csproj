@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>net462</TargetFrameworks>
+		<LangVersion>8.0</LangVersion>
 		<Version>0.1</Version>
 		<Description>Simplify.Web API hosted inside windows service application</Description>
 		<OutputType>Exe</OutputType>
