@@ -1,4 +1,5 @@
-﻿using Simplify.Web.Bootstrapper;
+﻿using Simplify.DI;
+using Simplify.Web.Bootstrapper;
 
 namespace MyProject.Angular.Setup
 {
@@ -9,7 +10,7 @@ namespace MyProject.Angular.Setup
 			// Simplify.DI.DIContainer.Current IOC container registrations starting point
 
 			// Manual Simplify.Web internal types registrations
-			BootstrapperFactory.CreateBootstrapper().Register();
+			DIContainer.Current.RegisterSimplifyWeb();
 		}
 	}
 }
