@@ -3,7 +3,7 @@
 		<TargetFramework>netcoreapp2.2</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.5</PackageVersion>
+		<PackageVersion>0.6</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</PackageProjectUrl>
@@ -12,12 +12,11 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to Simplify.Web 2.3
-			* Upgrade Simplify.Web.Json 1.2.4
-			* Upgrade to Simplify.WindowsServices 2.10
-			* Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection 1.2
-			Bug Fixes
-			* Missing launchSettings.json added
+			* Upgrade to Simplify.Web 3
+			* Upgrade Simplify.Web.Json 1.4
+			* Upgrade to .NET Core 3
+			Other
+			* Refactoring
 		</PackageReleaseNotes>
 		<Title>Simplify.Web project templates</Title>
 		<Authors>Alexander Krylkov</Authors>
