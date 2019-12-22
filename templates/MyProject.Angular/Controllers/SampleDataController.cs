@@ -17,6 +17,7 @@ namespace MyProject.Angular.Controllers
 		public override ControllerResponse Invoke()
 		{
 			var rng = new Random();
+
 			var items = Enumerable.Range(1, 5).Select(index => new WeatherForecast
 			{
 				DateFormatted = DateTime.Now.AddDays(index).ToString("d"),

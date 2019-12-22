@@ -1,12 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Server.Kestrel.Core;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyProject.Api.Setup;
 using Simplify.DI;
 using Simplify.Web;
-using Simplify.Web.Json.ModelBinding.Binders;
+using Simplify.Web.Json.Model.Binding;
 using Simplify.Web.Model;
 
 namespace MyProject.Api
@@ -24,12 +22,9 @@ namespace MyProject.Api
 			app.UseSimplifyWebWithoutRegistrations();
 		}
 
-		public void ConfigureServices(IServiceCollection services)
+		public void ConfigureServices()
 		{
 			InitializeContainer();
-
-			services.Configure<KestrelServerOptions>(options => { options.AllowSynchronousIO = true; });
-			services.Configure<IISServerOptions>(options => { options.AllowSynchronousIO = true; });
 		}
 
 		private static void InitializeContainer()

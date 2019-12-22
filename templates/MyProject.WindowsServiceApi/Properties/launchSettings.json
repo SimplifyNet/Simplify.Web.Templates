@@ -10,7 +10,7 @@
 				"ASPNETCORE_ENVIRONMENT": "Development"
 			},
 			"launchBrowser": true,
-			"applicationUrl": "http://localhost:8080/"
+			"applicationUrl": "http://localhost:5000/"
 		}
 	}
 }

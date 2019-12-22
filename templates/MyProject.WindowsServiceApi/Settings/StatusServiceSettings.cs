@@ -27,6 +27,6 @@ namespace MyProject.WindowsServiceApi.Settings
 		}
 
 		public string BindHostName { get; set; } = "*";
-		public int WorkingPort { get; set; } = 8080;
+		public int WorkingPort { get; set; } = 5000;
 	}
 }
