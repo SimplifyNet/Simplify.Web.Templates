@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>netcoreapp2.2</TargetFramework>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.7</PackageVersion>
+		<PackageVersion>0.7.1</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</PackageProjectUrl>
@@ -12,9 +12,8 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to Simplify.Web 4
-			* Upgrade Simplify.Web.Json 2
-			* Upgrade to .NET Core 3.1
+			* Upgrade to Simplify.Web 4.0.2
+			* Upgrade Simplify.Web.Json 2.0.1
 		</PackageReleaseNotes>
 		<Title>Simplify.Web project templates</Title>
 		<Authors>Alexander Krylkov</Authors>
