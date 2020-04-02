@@ -5,6 +5,6 @@
 		<Version>0.1</Version>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="4.0.2" />
+		<PackageReference Include="Simplify.Web" Version="4.1.0" />
 	</ItemGroup>
 </Project>
