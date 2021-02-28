@@ -6,9 +6,6 @@ namespace MyProject.WindowsServiceApi.Controllers
 	[Get("status")]
 	public class StatusController : Controller
 	{
-		public override ControllerResponse Invoke()
-		{
-			return Content("Service is running!");
-		}
+		public override ControllerResponse Invoke() => Content("Service is running!");
 	}
 }

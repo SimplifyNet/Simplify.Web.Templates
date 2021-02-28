@@ -6,15 +6,17 @@ using Simplify.Web.Json;
 
 namespace MyProject.WindowsServiceApi.Setup
 {
-	public class IocRegistrations
+	public static class IocRegistrations
 	{
-		public static void Register()
+		public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 		{
-			DIContainer.Current.RegisterSimplifyWeb()
-				.RegisterJsonModelBinder();
+			provider.RegisterSimplifyWeb()
+				.RegisterJsonModelBinder()
 
-			DIContainer.Current.Register(r => new StatusServiceSettings(r.Resolve<IConfiguration>()), LifetimeType.Singleton);
-			DIContainer.Current.Register<WebApplicationStartup>(LifetimeType.Singleton);
+			.Register(r => new StatusServiceSettings(r.Resolve<IConfiguration>()), LifetimeType.Singleton)
+			.Register<WebApplicationStartup>(LifetimeType.Singleton);
+
+			return provider;
 		}
 	}
 }

@@ -2,12 +2,10 @@
 {
 	public class SampleModelFactory
 	{
-		public SampleModel Create(string message)
-		{
-			return new SampleModel
+		public SampleModel Create(string message) =>
+			new SampleModel
 			{
 				Message = message
 			};
-		}
 	}
 }

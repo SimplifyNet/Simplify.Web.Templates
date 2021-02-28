@@ -7,14 +7,16 @@ namespace MyProject.Api.Setup
 {
 	public static class IocRegistrations
 	{
-		public static void Register()
+		public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 		{
 			// Simplify.DI.DIContainer.Current IOC container registrations starting point
 
-			DIContainer.Current.RegisterSimplifyWeb()
-				.RegisterJsonModelBinder();
+			provider.RegisterSimplifyWeb()
+				.RegisterJsonModelBinder()
 
-			DIContainer.Current.Register<SampleModelFactory>();
+			.Register<SampleModelFactory>();
+
+			return provider;
 		}
 	}
 }
