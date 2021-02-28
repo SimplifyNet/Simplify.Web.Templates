@@ -5,12 +5,14 @@ namespace MyProject.Angular.Setup
 {
 	public static class IocRegistrations
 	{
-		public static void Register()
+		public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 		{
 			// Simplify.DI.DIContainer.Current IOC container registrations starting point
 
 			// Manual Simplify.Web internal types registrations
-			DIContainer.Current.RegisterSimplifyWeb();
+			provider.RegisterSimplifyWeb();
+
+			return provider;
 		}
 	}
 }

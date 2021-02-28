@@ -34,12 +34,6 @@ namespace MyProject.WindowsServiceApi
 			Console.ReadLine();
 		}
 
-		private static void InitializeContainer()
-		{
-			IocRegistrations.Register();
-
-			// IOC container dependencies graph verification
-			DIContainer.Current.Verify();
-		}
+		private static void InitializeContainer() => DIContainer.Current.RegisterAll().Verify();
 	}
 }

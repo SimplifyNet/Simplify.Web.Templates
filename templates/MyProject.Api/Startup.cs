@@ -22,17 +22,6 @@ namespace MyProject.Api
 			app.UseSimplifyWebWithoutRegistrations();
 		}
 
-		public void ConfigureServices()
-		{
-			InitializeContainer();
-		}
-
-		private static void InitializeContainer()
-		{
-			IocRegistrations.Register();
-
-			// IOC container dependencies graph verification
-			DIContainer.Current.Verify();
-		}
+		public void ConfigureServices() => DIContainer.Current.RegisterAll().Verify();
 	}
 }

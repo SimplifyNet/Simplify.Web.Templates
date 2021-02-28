@@ -1,4 +1,3 @@
-using System;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
@@ -13,22 +12,17 @@ namespace MyProject.Angular
 {
 	public class Startup
 	{
-		public IServiceProvider ConfigureServices(IServiceCollection services)
+		public void ConfigureServices(IServiceCollection services)
 		{
-			var provider = new MicrosoftDependencyInjectionDIProvider { Services = services };
-			DIContainer.Current = provider;
+			DIContainer.Current = new MicrosoftDependencyInjectionDIProvider { Services = services };
 
-			// Your registrations here (both via services or DIContainer.Current.Register)
+			DIContainer.Current.RegisterAll();
 
 			// In production, the Angular files will be served from this directory
 			services.AddSpaStaticFiles(configuration =>
 			{
 				configuration.RootPath = "ClientApp/dist";
 			});
-
-			IocRegistrations.Register();
-
-			return provider.ServiceProvider;
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

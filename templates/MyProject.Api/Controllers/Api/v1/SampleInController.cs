@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using MyProject.Api.ViewModels;
 using Simplify.Web;
 using Simplify.Web.Attributes;
@@ -7,12 +8,14 @@ using Simplify.Web.Attributes;
 namespace MyProject.Api.Controllers.Api.v1
 {
 	[Post("/api/v1/sampleIn")]
-	public class SampleInController : Controller<SampleModel>
+	public class SampleInController : AsyncController<SampleModel>
 	{
-		public override ControllerResponse Invoke()
+		public override async Task<ControllerResponse> Invoke()
 		{
 			try
 			{
+				await ReadModelAsync();
+
 				Trace.WriteLine($"Object with message received: {Model.Message}");
 
 				return NoContent();

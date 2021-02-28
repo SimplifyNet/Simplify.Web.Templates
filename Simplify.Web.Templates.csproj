@@ -3,7 +3,7 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.7.3</PackageVersion>
+		<PackageVersion>0.8</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</PackageProjectUrl>
@@ -12,9 +12,10 @@
 		<RepositoryType>GIT</RepositoryType>
 		<PackageReleaseNotes>
 			Updates
-			* Upgrade to Simplify.Web 4.2.* (floating version set)
-			* Upgrade to Simplify.Web.Json 2.1.* (floating version set)
-			* Upgrade to Microsoft.AspNetCore.SpaServices.Extensions 3.1.* (floating version set)
+			* Refactoring to fluent interfaces
+			* Refactoring to expression bodies for methods
+			* Dependencies bump to latest
+			* Meta info reorganized
 		</PackageReleaseNotes>
 		<Title>Simplify.Web project templates</Title>
 		<Authors>Alexander Krylkov</Authors>

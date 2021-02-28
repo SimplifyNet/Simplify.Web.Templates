@@ -8,21 +8,16 @@ namespace MyProject.WindowsServiceApi
 	{
 		private readonly StatusServiceSettings _settings;
 
-		public WebApplicationStartup(StatusServiceSettings settings)
-		{
-			_settings = settings;
-		}
+		public WebApplicationStartup(StatusServiceSettings settings) => _settings = settings;
 
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 			WebHost.CreateDefaultBuilder(args)
 				.UseStartup<Startup>();
 
-		public void Run()
-		{
+		public void Run() =>
 			CreateWebHostBuilder(Program.Args)
 				.UseUrls($"http://{_settings.BindHostName}:{_settings.WorkingPort}")
 				.Build()
 				.Start();
-		}
 	}
 }
