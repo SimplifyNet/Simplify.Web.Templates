@@ -6,7 +6,7 @@
 		<Version>0.1</Version>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web.Json" Version="2.1.*" />
+		<PackageReference Include="Simplify.Web.Json" Version="2.2.*" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Update="appsettings.Development.json">
