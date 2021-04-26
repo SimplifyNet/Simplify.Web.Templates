@@ -3,21 +3,20 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.8.1</PackageVersion>
+		<PackageVersion>0.8.2</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</PackageProjectUrl>
-		<PackageIconUrl>https://raw.githubusercontent.com/SimplifyNet/Images/master/LogoWeb32x32.png</PackageIconUrl>
+		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
-		<PackageReleaseNotes>
-			Updates
-			* Simplify.Web.Json bump to 2.2.*
-		</PackageReleaseNotes>
+
 		<Title>Simplify.Web project templates</Title>
 		<Authors>Alexander Krylkov</Authors>
 		<Description>The Simplify.Web web framework project templates collection.</Description>
 		<Tags>templates;simplify-web;web</Tags>
+
+		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.MessageBox/blob/master/Simplify.Web.MessageBox/CHANGELOG.md for details</PackageReleaseNotes>
 
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
@@ -26,5 +25,9 @@
 	<ItemGroup>
 		<Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
 		<Compile Remove="**\*" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
+		<None Include="CHANGELOG.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
