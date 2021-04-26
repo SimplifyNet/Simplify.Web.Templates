@@ -16,7 +16,7 @@
 		<Description>The Simplify.Web web framework project templates collection.</Description>
 		<Tags>templates;simplify-web;web</Tags>
 
-		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.MessageBox/blob/master/Simplify.Web.MessageBox/CHANGELOG.md for details</PackageReleaseNotes>
+		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Templates/blob/master/CHANGELOG.md for details</PackageReleaseNotes>
 
 		<IncludeContentInPack>true</IncludeContentInPack>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
