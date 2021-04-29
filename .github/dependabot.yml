@@ -8,7 +8,3 @@ updates:
     timezone: Asia/Dacca
   open-pull-requests-limit: 10
   target-branch: develop
-  ignore:
-  - dependency-name: Simplify.Web
-    versions:
-    - 4.3.0
