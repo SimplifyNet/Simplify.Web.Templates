@@ -3,9 +3,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace MyProject.WindowsServiceApi.Settings
 {
-	public class StatusServiceSettings
+	public class WebApplicationStartupSettings
 	{
-		public StatusServiceSettings(IConfiguration configuration, string configurationSectionName = "StatusServiceSettings")
+		public WebApplicationStartupSettings(IConfiguration configuration, string configurationSectionName = "WebApplicationStartupSettings")
 		{
 			var config = configuration.GetSection(configurationSectionName);
 

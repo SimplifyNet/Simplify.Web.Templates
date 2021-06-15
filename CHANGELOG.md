@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.0] - 2021-06-15
+
+### Added
+
+- Simplify.Scheduler hosted template
+
+### Changed
+
+- Target Framework upgrade to .NET 5
+- C# language version set to 9
+- Code refactoring
+
 ## [0.8.2] - 2021-04-27
 
 ### Dependencies

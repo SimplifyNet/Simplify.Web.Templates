@@ -1,9 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 	<PropertyGroup>
-		<TargetFramework>netcoreapp3.1</TargetFramework>
-		<LangVersion>8.0</LangVersion>
-
-		<Version>0.1</Version>
+		<TargetFramework>net5.0</TargetFramework>
+		<LangVersion>9.0</LangVersion>
 
 		<TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
 		<TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>

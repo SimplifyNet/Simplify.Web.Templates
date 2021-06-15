@@ -22,6 +22,9 @@ namespace MyProject.Api
 			app.UseSimplifyWebWithoutRegistrations();
 		}
 
-		public void ConfigureServices() => DIContainer.Current.RegisterAll().Verify();
+		public void ConfigureServices() =>
+			DIContainer.Current
+				.RegisterAll()
+				.Verify();
 	}
 }

@@ -13,7 +13,7 @@ namespace MyProject.WindowsServiceApi.Setup
 			provider.RegisterSimplifyWeb()
 				.RegisterJsonModelBinder()
 
-			.Register(r => new StatusServiceSettings(r.Resolve<IConfiguration>()), LifetimeType.Singleton)
+			.Register(r => new WebApplicationStartupSettings(r.Resolve<IConfiguration>()), LifetimeType.Singleton)
 			.Register<WebApplicationStartup>(LifetimeType.Singleton);
 
 			return provider;

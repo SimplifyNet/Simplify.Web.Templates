@@ -2,38 +2,38 @@
 using MyProject.WindowsServiceApi.Setup;
 using Simplify.DI;
 using Simplify.WindowsServices;
+using Simplify.WindowsServices.Jobs;
 
 namespace MyProject.WindowsServiceApi
 {
 	internal class Program
 	{
-		public static string[] Args { get; private set; }
-
 		private static void Main(string[] args)
 		{
 #if DEBUG
 			System.Diagnostics.Debugger.Launch();
 #endif
 
-			Args = args;
-
 			InitializeContainer();
 
-			using var handler = new BasicServiceHandler<WebApplicationStartup>();
+			using var handler = new BasicServiceHandler<WebApplicationStartup>(startupArgs: args);
 
 			if (!handler.Start(args))
-				RunAsConsoleApplication();
+				RunAsConsoleApplication(args);
 		}
 
-		private static void RunAsConsoleApplication()
+		private static void RunAsConsoleApplication(string[] args)
 		{
 			using var scope = DIContainer.Current.BeginLifetimeScope();
 
-			scope.Resolver.Resolve<WebApplicationStartup>().Run();
+			scope.Resolver.Resolve<WebApplicationStartup>().Run(new JobArgs("Development", args));
 
 			Console.ReadLine();
 		}
 
-		private static void InitializeContainer() => DIContainer.Current.RegisterAll().Verify();
+		private static void InitializeContainer() =>
+			DIContainer.Current
+				.RegisterAll()
+				.Verify();
 	}
 }

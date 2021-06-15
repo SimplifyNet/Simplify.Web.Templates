@@ -15,7 +15,6 @@ namespace MyProject.Angular
 		public void ConfigureServices(IServiceCollection services)
 		{
 			DIContainer.Current = new MicrosoftDependencyInjectionDIProvider { Services = services };
-
 			DIContainer.Current.RegisterAll();
 
 			// In production, the Angular files will be served from this directory

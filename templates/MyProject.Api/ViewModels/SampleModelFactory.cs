@@ -3,7 +3,7 @@
 	public class SampleModelFactory
 	{
 		public SampleModel Create(string message) =>
-			new SampleModel
+			new()
 			{
 				Message = message
 			};
