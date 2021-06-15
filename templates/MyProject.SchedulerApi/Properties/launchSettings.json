@@ -1,0 +1,15 @@
+{
+	"profiles":
+	{
+		"MyProject.SchedulerApi":
+		{
+			"commandName": "Project",
+			"environmentVariables":
+			{
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			},
+			"launchBrowser": true,
+			"applicationUrl": "http://localhost:5000/status"
+		}
+	}
+}

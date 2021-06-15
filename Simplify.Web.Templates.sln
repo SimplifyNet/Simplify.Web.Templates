@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.WindowsServiceApi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.Angular", "templates\MyProject.Angular\MyProject.Angular.csproj", "{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProject.SchedulerApi", "templates\MyProject.SchedulerApi\MyProject.SchedulerApi.csproj", "{95A81656-07FD-46C1-8784-5EFA79FC7BCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FEDDA4A-F993-4B65-9CC6-8F1C3FA57937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A81656-07FD-46C1-8784-5EFA79FC7BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A81656-07FD-46C1-8784-5EFA79FC7BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A81656-07FD-46C1-8784-5EFA79FC7BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A81656-07FD-46C1-8784-5EFA79FC7BCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

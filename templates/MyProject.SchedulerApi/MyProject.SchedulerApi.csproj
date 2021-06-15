@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<TargetFrameworks>net5.0</TargetFrameworks>
+		<LangVersion>9.0</LangVersion>
+		<OutputType>Exe</OutputType>
+
+		<Description>Simplify.Web API hosted inside Simplify.Scheduler application</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Simplify.Scheduler" Version="1.2.*" />
+		<PackageReference Include="Simplify.Web.Json" Version="2.2.*" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Update="appsettings.Development.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>
