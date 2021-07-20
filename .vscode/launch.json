@@ -7,7 +7,7 @@
 		"request": "launch",
 		"preLaunchTask": "Build",
 		"program": "${workspaceFolder}/templates/MyProject.Angular/bin/Debug/net5.0/MyProject.Angular.dll",
-		"cwd": "${workspaceFolder}/templates/MyProject.Angular/bin/Debug/net5.0/",
+		"cwd": "${workspaceFolder}/templates/MyProject.Angular",
 		"internalConsoleOptions": "openOnSessionStart",
 		"env":
 		{
