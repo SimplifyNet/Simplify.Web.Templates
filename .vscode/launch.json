@@ -1,0 +1,56 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+	{
+		"name": "MyProject.Angular Launch",
+		"type": "coreclr",
+		"request": "launch",
+		"preLaunchTask": "Build",
+		"program": "${workspaceFolder}/templates/MyProject.Angular/bin/Debug/net5.0/MyProject.Angular.dll",
+		"cwd": "${workspaceFolder}/templates/MyProject.Angular/bin/Debug/net5.0/",
+		"internalConsoleOptions": "openOnSessionStart",
+		"env":
+		{
+			"ASPNETCORE_ENVIRONMENT": "Development"
+		},
+		"serverReadyAction":
+		{
+			"action": "openExternally",
+			"pattern": "Now listening on",
+			"uriFormat": "http://localhost:5000"
+		}
+	},
+	{
+		"name": "MyProject.Api Launch",
+		"type": "coreclr",
+		"request": "launch",
+		"preLaunchTask": "Build",
+		"program": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net5.0/MyProject.Api.dll",
+		"cwd": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net5.0/",
+		"internalConsoleOptions": "openOnSessionStart",
+		"env":
+		{
+			"ASPNETCORE_ENVIRONMENT": "Development"
+		},
+		"serverReadyAction":
+		{
+			"action": "openExternally",
+			"pattern": "Now listening on",
+			"uriFormat": "http://localhost:5000/api/v1/sampleOut"
+		}
+	},
+	{
+		"name": "MyProject.WindowsServiceApi Launch",
+		"type": "coreclr",
+		"request": "launch",
+		"preLaunchTask": "Build",
+		"program": "${workspaceFolder}/templates/MyProject.WindowsServiceApi/bin/Debug/net48/MyProject.WindowsServiceApi.exe",
+		"cwd": "${workspaceFolder}/templates/MyProject.WindowsServiceApi/bin/Debug/net48/",
+		"internalConsoleOptions": "openOnSessionStart",
+		"env":
+		{
+			"ASPNETCORE_ENVIRONMENT": "Development"
+		},
+		"args": "console"
+	}]
+}
