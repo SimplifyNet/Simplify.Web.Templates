@@ -2,10 +2,6 @@
 
 ## [0.10.0] - 2021-07-20
 
-### Changed
-
-- Simplify.Scheduler hosted template
-
 ### Dependencies
 
 - Anuglar template: Microsoft.AspNetCore.SpaServices.Extensions bump to 5.0.*
