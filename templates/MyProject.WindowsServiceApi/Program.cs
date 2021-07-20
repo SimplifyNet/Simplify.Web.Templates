@@ -10,10 +10,6 @@ namespace MyProject.WindowsServiceApi
 	{
 		private static void Main(string[] args)
 		{
-#if DEBUG
-			System.Diagnostics.Debugger.Launch();
-#endif
-
 			InitializeContainer();
 
 			using var handler = new BasicServiceHandler<WebApplicationStartup>(startupArgs: args);
