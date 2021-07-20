@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.10.0] - 2021-07-20
+
+### Changed
+
+- Simplify.Scheduler hosted template
+
+### Dependencies
+
+- Anuglar template: Microsoft.AspNetCore.SpaServices.Extensions bump to 5.0.*
+- Anuglar template: Simplify.DI.Provider.Microsoft.Extensions.DependencyInjection bump to 1.4.*
+- Angular template: explicit dependencies cleanup
+
 ## [0.9.0] - 2021-06-15
 
 ### Added
