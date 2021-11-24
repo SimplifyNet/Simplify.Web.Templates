@@ -10,7 +10,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
 		<PackageReference Include="Simplify.Web.Json" Version="2.2.*" />
-		<PackageReference Include="Simplify.WindowsServices" Version="2.13.*" />
+		<PackageReference Include="Simplify.WindowsServices" Version="2.14.*" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Update="appsettings.Development.json">
