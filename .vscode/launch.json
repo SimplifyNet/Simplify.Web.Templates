@@ -25,8 +25,8 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net5.0/MyProject.Api.dll",
-		"cwd": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net5.0/",
+		"program": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net6.0/MyProject.Api.dll",
+		"cwd": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net6.0/",
 		"internalConsoleOptions": "openOnSessionStart",
 		"env":
 		{

@@ -5,25 +5,24 @@ using MyProject.Api.ViewModels;
 using Simplify.Web;
 using Simplify.Web.Attributes;
 
-namespace MyProject.Api.Controllers.Api.v1
+namespace MyProject.Api.Controllers.Api.v1;
+
+[Post("/api/v1/sampleIn")]
+public class SampleInController : AsyncController<SampleModel>
 {
-	[Post("/api/v1/sampleIn")]
-	public class SampleInController : AsyncController<SampleModel>
+	public override async Task<ControllerResponse> Invoke()
 	{
-		public override async Task<ControllerResponse> Invoke()
+		try
 		{
-			try
-			{
-				await ReadModelAsync();
+			await ReadModelAsync();
 
-				Trace.WriteLine($"Object with message received: {Model.Message}");
+			Trace.WriteLine($"Object with message received: {Model.Message}");
 
-				return NoContent();
-			}
-			catch (Exception e)
-			{
-				return StatusCode(500, e.Message);
-			}
+			return NoContent();
+		}
+		catch (Exception e)
+		{
+			return StatusCode(500, e.Message);
 		}
 	}
 }
