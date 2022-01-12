@@ -6,7 +6,7 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/templates/MyProject.Angular/bin/Debug/net5.0/MyProject.Angular.dll",
+		"program": "${workspaceFolder}/templates/MyProject.Angular/bin/Debug/net6.0/MyProject.Angular.dll",
 		"cwd": "${workspaceFolder}/templates/MyProject.Angular",
 		"internalConsoleOptions": "openOnSessionStart",
 		"env":
