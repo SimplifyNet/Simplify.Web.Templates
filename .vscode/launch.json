@@ -21,6 +21,25 @@
 		}
 	},
 	{
+		"name": "MyProject.Minimal Launch",
+		"type": "coreclr",
+		"request": "launch",
+		"preLaunchTask": "Build",
+		"program": "${workspaceFolder}/templates/MyProject.Minimal/bin/Debug/net6.0/MyProject.Minimal.dll",
+		"cwd": "${workspaceFolder}/templates/MyProject.Minimal/bin/Debug/net6.0/",
+		"internalConsoleOptions": "openOnSessionStart",
+		"env":
+		{
+			"ASPNETCORE_ENVIRONMENT": "Development"
+		},
+		"serverReadyAction":
+		{
+			"action": "openExternally",
+			"pattern": "Now listening on",
+			"uriFormat": "http://localhost:5000"
+		}
+	},
+	{
 		"name": "MyProject.Api Launch",
 		"type": "coreclr",
 		"request": "launch",
