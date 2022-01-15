@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.0] - 2022-01-16
+
+### Added
+
+Upgrade templates to .NET 6 and new C# features.
+
 ## [0.10.0] - 2021-07-20
 
 ### Dependencies

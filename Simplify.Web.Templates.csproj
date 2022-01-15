@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net5.0</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 
 		<PackageType>Template</PackageType>
-		<PackageVersion>0.10</PackageVersion>
+		<PackageVersion>1.0</PackageVersion>
 		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</PackageProjectUrl>
