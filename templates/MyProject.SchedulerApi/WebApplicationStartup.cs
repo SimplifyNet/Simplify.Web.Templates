@@ -1,22 +1,33 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-using MyProject.SchedulerApi.Settings;
+﻿using MyProject.SchedulerApi.Settings;
 using Simplify.Scheduler.Jobs;
+using Simplify.Web;
+using Simplify.Web.Json.Model.Binding;
+using Simplify.Web.Model;
 
-namespace MyProject.SchedulerApi
+namespace MyProject.SchedulerApi;
+
+public class WebApplicationStartup
 {
-	public class WebApplicationStartup
+	private readonly WebApplicationStartupSettings _settings;
+
+	public WebApplicationStartup(WebApplicationStartupSettings settings) => _settings = settings;
+
+	public void Run(IJobArgs args)
 	{
-		private readonly WebApplicationStartupSettings _settings;
+		var builder = WebApplication.CreateBuilder((string[])args.StartupArgs!);
+		
+		builder.WebHost.UseUrls($"http://{_settings.BindHostName}:{_settings.WorkingPort}");
+		
+		var app = builder.Build();
 
-		public WebApplicationStartup(WebApplicationStartupSettings settings) => _settings = settings;
+		if (app.Environment.IsDevelopment())
+			app.UseDeveloperExceptionPage();
 
-		public void Run(IJobArgs args) =>
-			WebHost.CreateDefaultBuilder(((string[])args.StartupArgs)!)
-				.UseKestrel(options => { options.Limits.MinRequestBodyDataRate = null; })
-				.UseStartup<Startup>()
-				.UseUrls($"http://{_settings.BindHostName}:{_settings.WorkingPort}")
-				.Build()
-				.Start();
+		// Enabling Simplify.Web JSON requests handling
+		HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
+
+		app.UseSimplifyWebWithoutRegistrations();
+
+		app.Run();
 	}
 }

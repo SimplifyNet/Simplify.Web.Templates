@@ -1,22 +1,15 @@
-﻿using MyProject.SchedulerApi.Setup;
+﻿using MyProject.SchedulerApi;
+using MyProject.SchedulerApi.Setup;
 using Simplify.DI;
 using Simplify.Scheduler;
+using Simplify.Web;
+using Simplify.Web.Json.Model.Binding;
+using Simplify.Web.Model;
 
-namespace MyProject.SchedulerApi
-{
-	internal class Program
-	{
-		private static void Main(string[] args)
-		{
-			InitializeContainer();
+DIContainer.Current
+	.RegisterAll()
+	.Verify();
 
-			using var handler = new BasicScheduler<WebApplicationStartup>(startupArgs: args);
+using var handler = new BasicScheduler<WebApplicationStartup>(startupArgs: args);
 
-			handler.Start(args);
-		}
-
-		private static void InitializeContainer() =>
-			DIContainer.Current.RegisterAll()
-				.Verify();
-	}
-}
+handler.Start(args);

@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 	<PropertyGroup>
-		<TargetFrameworks>net5.0</TargetFrameworks>
-		<LangVersion>9.0</LangVersion>
-		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
 
 		<Description>Simplify.Web API hosted inside Simplify.Scheduler application</Description>
 	</PropertyGroup>
