@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using MyProject.Api.ViewModels;
 using Simplify.Web;
 using Simplify.Web.Attributes;

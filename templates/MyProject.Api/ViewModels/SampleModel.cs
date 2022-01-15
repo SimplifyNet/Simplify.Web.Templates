@@ -1,7 +1,6 @@
-﻿namespace MyProject.Api.ViewModels
+﻿namespace MyProject.Api.ViewModels;
+
+public class SampleModel
 {
-	public class SampleModel
-	{
-		public string Message { get; set; }
-	}
+	public string Message { get; set; }
 }

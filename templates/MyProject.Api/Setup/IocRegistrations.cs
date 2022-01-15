@@ -3,20 +3,19 @@ using Simplify.DI;
 using Simplify.Web.Bootstrapper;
 using Simplify.Web.Json;
 
-namespace MyProject.Api.Setup
+namespace MyProject.Api.Setup;
+
+public static class IocRegistrations
 {
-	public static class IocRegistrations
+	public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
 	{
-		public static IDIContainerProvider RegisterAll(this IDIContainerProvider provider)
-		{
-			// Simplify.DI.DIContainer.Current IOC container registrations starting point
+		// Simplify.DI.DIContainer.Current IOC container registrations starting point
 
-			provider.RegisterSimplifyWeb()
-				.RegisterJsonModelBinder()
+		provider.RegisterSimplifyWeb()
+			.RegisterJsonModelBinder()
 
-			.Register<SampleModelFactory>();
+		.Register<SampleModelFactory>();
 
-			return provider;
-		}
+		return provider;
 	}
 }

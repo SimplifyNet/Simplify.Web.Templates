@@ -1,11 +1,10 @@
-﻿namespace MyProject.Api.ViewModels
+﻿namespace MyProject.Api.ViewModels;
+
+public class SampleModelFactory
 {
-	public class SampleModelFactory
-	{
-		public SampleModel Create(string message) =>
-			new()
-			{
-				Message = message
-			};
-	}
+	public SampleModel Create(string message) =>
+		new()
+		{
+			Message = message
+		};
 }

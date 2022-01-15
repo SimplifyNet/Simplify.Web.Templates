@@ -2,9 +2,6 @@
 using MyProject.SchedulerApi.Setup;
 using Simplify.DI;
 using Simplify.Scheduler;
-using Simplify.Web;
-using Simplify.Web.Json.Model.Binding;
-using Simplify.Web.Model;
 
 DIContainer.Current
 	.RegisterAll()

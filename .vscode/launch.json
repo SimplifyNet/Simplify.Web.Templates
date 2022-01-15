@@ -87,6 +87,12 @@
 		"cwd": "${workspaceFolder}/templates/MyProject.WindowsServiceApi/bin/Debug/net48/",
 		"internalConsoleOptions": "openOnSessionStart",
 		"args": "console",
+		"serverReadyAction":
+		{
+			"action": "openExternally",
+			"pattern": "Service started.",
+			"uriFormat": "http://localhost:5000/status"
+		},
 		"env":
 		{
 			"ASPNETCORE_ENVIRONMENT": "Development"

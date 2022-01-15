@@ -15,9 +15,9 @@ public class WebApplicationStartup
 	public void Run(IJobArgs args)
 	{
 		var builder = WebApplication.CreateBuilder((string[])args.StartupArgs!);
-		
+
 		builder.WebHost.UseUrls($"http://{_settings.BindHostName}:{_settings.WorkingPort}");
-		
+
 		var app = builder.Build();
 
 		if (app.Environment.IsDevelopment())

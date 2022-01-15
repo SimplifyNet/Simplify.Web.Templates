@@ -1,31 +1,29 @@
-﻿using System;
-using MyProject.Api.ViewModels;
+﻿using MyProject.Api.ViewModels;
 using Simplify.Web;
 using Simplify.Web.Attributes;
 using Simplify.Web.Json.Responses;
 
-namespace MyProject.Api.Controllers.Api.v1
+namespace MyProject.Api.Controllers.Api.v1;
+
+[Get("/api/v1/sampleOut")]
+public class SampleOutController : Controller
 {
-	[Get("/api/v1/sampleOut")]
-	public class SampleOutController : Controller
+	private readonly SampleModelFactory _modelFactory;
+
+	public SampleOutController(SampleModelFactory modelFactory)
 	{
-		private readonly SampleModelFactory _modelFactory;
+		_modelFactory = modelFactory;
+	}
 
-		public SampleOutController(SampleModelFactory modelFactory)
+	public override ControllerResponse Invoke()
+	{
+		try
 		{
-			_modelFactory = modelFactory;
+			return new Json(_modelFactory.Create("Hello from Simplify.Web API example application"));
 		}
-
-		public override ControllerResponse Invoke()
+		catch (Exception e)
 		{
-			try
-			{
-				return new Json(_modelFactory.Create("Hello from Simplify.Web API example application"));
-			}
-			catch (Exception e)
-			{
-				return StatusCode(500, e.Message);
-			}
+			return StatusCode(500, e.Message);
 		}
 	}
 }
