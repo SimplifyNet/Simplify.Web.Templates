@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1] - 2022-01-18
+
+### Dependencies
+
+Upgrade Angular template front ent dependencies to latest (Angular 13.1.2)
+
 ## [1.0.0] - 2022-01-16
 
 ### Added
