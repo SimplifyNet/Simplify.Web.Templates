@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] - 2022-02-27
+
+### Dependencies
+
+Upgrade Angular package-lock
+
 ## [1.0.1] - 2022-01-18
 
 ### Dependencies
