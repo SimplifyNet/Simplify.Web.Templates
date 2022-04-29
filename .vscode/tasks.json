@@ -4,16 +4,19 @@
 	{
 		"label": "Build",
 		"command": "dotnet",
-		"type": "process",
+		"type": "shell",
 		"args": [
-			"build",
-			"${workspaceFolder}/Simplify.Web.Templates.sln"
+			"build"
 		],
-		"problemMatcher": "$msCompile",
+		"options":
+		{
+			"cwd": "src"
+		},
 		"group":
 		{
 			"kind": "build",
 			"isDefault": true
-		}
+		},
+		"problemMatcher": "$msCompile"
 	}]
 }

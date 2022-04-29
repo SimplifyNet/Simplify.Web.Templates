@@ -1,0 +1,37 @@
+name: Build Package
+
+on: push
+
+defaults:
+  run:
+    working-directory: src
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v2
+
+      - name: Install DotNet
+        uses: actions/setup-dotnet@v1
+
+      - name: Restore Dependencies
+        run: dotnet restore Simplify.Web.Templates.csproj
+
+      - name: Build Package
+        run: dotnet build Simplify.Web.Templates.csproj --no-restore -c Release
+
+      - name: Create Package
+        run: dotnet pack Simplify.Web.Templates.csproj --no-build -c Release -o ./publish
+
+      - name: Create packages artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Packages
+          path: ./src/publish/

@@ -6,8 +6,8 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/templates/MyProject.Angular/bin/Debug/net6.0/MyProject.Angular.dll",
-		"cwd": "${workspaceFolder}/templates/MyProject.Angular",
+		"program": "${workspaceFolder}/src/templates/MyProject.Angular/bin/Debug/net6.0/MyProject.Angular.dll",
+		"cwd": "${workspaceFolder}/src/templates/MyProject.Angular",
 		"internalConsoleOptions": "openOnSessionStart",
 		"serverReadyAction":
 		{
@@ -25,8 +25,8 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net6.0/MyProject.Api.dll",
-		"cwd": "${workspaceFolder}/templates/MyProject.Api/bin/Debug/net6.0/",
+		"program": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net6.0/MyProject.Api.dll",
+		"cwd": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net6.0/",
 		"internalConsoleOptions": "openOnSessionStart",
 		"serverReadyAction":
 		{
@@ -44,8 +44,8 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/templates/MyProject.Minimal/bin/Debug/net6.0/MyProject.Minimal.dll",
-		"cwd": "${workspaceFolder}/templates/MyProject.Minimal/bin/Debug/net6.0/",
+		"program": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net6.0/MyProject.Minimal.dll",
+		"cwd": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net6.0/",
 		"internalConsoleOptions": "openOnSessionStart",
 
 		"serverReadyAction":
@@ -64,8 +64,8 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/templates/MyProject.SchedulerApi/bin/Debug/net6.0/MyProject.SchedulerApi.dll",
-		"cwd": "${workspaceFolder}/templates/MyProject.SchedulerApi/bin/Debug/net6.0/",
+		"program": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net6.0/MyProject.SchedulerApi.dll",
+		"cwd": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net6.0/",
 		"internalConsoleOptions": "openOnSessionStart",
 		"serverReadyAction":
 		{
@@ -83,8 +83,8 @@
 		"type": "coreclr",
 		"request": "launch",
 		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/templates/MyProject.WindowsServiceApi/bin/Debug/net48/MyProject.WindowsServiceApi.exe",
-		"cwd": "${workspaceFolder}/templates/MyProject.WindowsServiceApi/bin/Debug/net48/",
+		"program": "${workspaceFolder}/src/templates/MyProject.WindowsServiceApi/bin/Debug/net48/MyProject.WindowsServiceApi.exe",
+		"cwd": "${workspaceFolder}/src/templates/MyProject.WindowsServiceApi/bin/Debug/net48/",
 		"internalConsoleOptions": "openOnSessionStart",
 		"args": "console",
 		"serverReadyAction":
