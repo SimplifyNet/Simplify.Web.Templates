@@ -1,101 +1,91 @@
 {
 	"version": "0.2.0",
 	"configurations": [
-	{
-		"name": "MyProject.Angular Launch",
-		"type": "coreclr",
-		"request": "launch",
-		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/templates/MyProject.Angular/bin/Debug/net6.0/MyProject.Angular.dll",
-		"cwd": "${workspaceFolder}/src/templates/MyProject.Angular",
-		"internalConsoleOptions": "openOnSessionStart",
-		"serverReadyAction":
 		{
-			"action": "openExternally",
-			"pattern": "Now listening on",
-			"uriFormat": "http://localhost:5000"
+			"name": "MyProject.Angular Launch",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "Build",
+			"program": "${workspaceFolder}/src/templates/MyProject.Angular/bin/Debug/net7.0/MyProject.Angular.dll",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.Angular",
+			"internalConsoleOptions": "openOnSessionStart",
+			"serverReadyAction": {
+				"action": "openExternally",
+				"pattern": "Now listening on",
+				"uriFormat": "http://localhost:5000"
+			},
+			"env": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
 		},
-		"env":
 		{
-			"ASPNETCORE_ENVIRONMENT": "Development"
-		}
-	},
-	{
-		"name": "MyProject.Api Launch",
-		"type": "coreclr",
-		"request": "launch",
-		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net6.0/MyProject.Api.dll",
-		"cwd": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net6.0/",
-		"internalConsoleOptions": "openOnSessionStart",
-		"serverReadyAction":
-		{
-			"action": "openExternally",
-			"pattern": "Now listening on",
-			"uriFormat": "http://localhost:5000/api/v1/sampleOut"
+			"name": "MyProject.Api Launch",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "Build",
+			"program": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net7.0/MyProject.Api.dll",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net7.0/",
+			"internalConsoleOptions": "openOnSessionStart",
+			"serverReadyAction": {
+				"action": "openExternally",
+				"pattern": "Now listening on",
+				"uriFormat": "http://localhost:5000/api/v1/sampleOut"
+			},
+			"env": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
 		},
-		"env":
 		{
-			"ASPNETCORE_ENVIRONMENT": "Development"
-		}
-	},
-	{
-		"name": "MyProject.Minimal Launch",
-		"type": "coreclr",
-		"request": "launch",
-		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net6.0/MyProject.Minimal.dll",
-		"cwd": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net6.0/",
-		"internalConsoleOptions": "openOnSessionStart",
-
-		"serverReadyAction":
-		{
-			"action": "openExternally",
-			"pattern": "Now listening on",
-			"uriFormat": "http://localhost:5000"
+			"name": "MyProject.Minimal Launch",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "Build",
+			"program": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net7.0/MyProject.Minimal.dll",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net7.0/",
+			"internalConsoleOptions": "openOnSessionStart",
+			"serverReadyAction": {
+				"action": "openExternally",
+				"pattern": "Now listening on",
+				"uriFormat": "http://localhost:5000"
+			},
+			"env": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
 		},
-		"env":
 		{
-			"ASPNETCORE_ENVIRONMENT": "Development"
-		}
-	},
-	{
-		"name": "MyProject.SchedulerApi Launch",
-		"type": "coreclr",
-		"request": "launch",
-		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net6.0/MyProject.SchedulerApi.dll",
-		"cwd": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net6.0/",
-		"internalConsoleOptions": "openOnSessionStart",
-		"serverReadyAction":
-		{
-			"action": "openExternally",
-			"pattern": "Now listening on",
-			"uriFormat": "http://localhost:5000/status"
+			"name": "MyProject.SchedulerApi Launch",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "Build",
+			"program": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net7.0/MyProject.SchedulerApi.dll",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net7.0/",
+			"internalConsoleOptions": "openOnSessionStart",
+			"serverReadyAction": {
+				"action": "openExternally",
+				"pattern": "Now listening on",
+				"uriFormat": "http://localhost:5000/status"
+			},
+			"env": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
 		},
-		"env":
 		{
-			"ASPNETCORE_ENVIRONMENT": "Development"
+			"name": "MyProject.WindowsServiceApi Launch",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "Build",
+			"program": "${workspaceFolder}/src/templates/MyProject.WindowsServiceApi/bin/Debug/net48/MyProject.WindowsServiceApi.exe",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.WindowsServiceApi/bin/Debug/net48/",
+			"internalConsoleOptions": "openOnSessionStart",
+			"args": "console",
+			"serverReadyAction": {
+				"action": "openExternally",
+				"pattern": "Service started.",
+				"uriFormat": "http://localhost:5000/status"
+			},
+			"env": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
 		}
-	},
-	{
-		"name": "MyProject.WindowsServiceApi Launch",
-		"type": "coreclr",
-		"request": "launch",
-		"preLaunchTask": "Build",
-		"program": "${workspaceFolder}/src/templates/MyProject.WindowsServiceApi/bin/Debug/net48/MyProject.WindowsServiceApi.exe",
-		"cwd": "${workspaceFolder}/src/templates/MyProject.WindowsServiceApi/bin/Debug/net48/",
-		"internalConsoleOptions": "openOnSessionStart",
-		"args": "console",
-		"serverReadyAction":
-		{
-			"action": "openExternally",
-			"pattern": "Service started.",
-			"uriFormat": "http://localhost:5000/status"
-		},
-		"env":
-		{
-			"ASPNETCORE_ENVIRONMENT": "Development"
-		}
-	}]
+	]
 }
