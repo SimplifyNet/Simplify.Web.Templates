@@ -1,6 +1,6 @@
 ﻿using MyProject.Api.ViewModels;
 using Simplify.DI;
-using Simplify.Web.Bootstrapper;
+using Simplify.Web;
 using Simplify.Web.Json;
 
 namespace MyProject.Api.Setup;

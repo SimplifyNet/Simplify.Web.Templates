@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using MyProject.WindowsServiceApi.Settings;
 using Simplify.DI;
-using Simplify.Web.Bootstrapper;
+using Simplify.Web;
 using Simplify.Web.Json;
 
 namespace MyProject.WindowsServiceApi.Setup;

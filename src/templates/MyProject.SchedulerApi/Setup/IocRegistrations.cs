@@ -1,6 +1,6 @@
 ﻿using MyProject.SchedulerApi.Settings;
 using Simplify.DI;
-using Simplify.Web.Bootstrapper;
+using Simplify.Web;
 using Simplify.Web.Json;
 
 namespace MyProject.SchedulerApi.Setup;
