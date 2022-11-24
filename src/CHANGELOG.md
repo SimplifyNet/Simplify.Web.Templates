@@ -1,11 +1,11 @@
 # Changelog
 
-## [1.1] - 2022-111-24
+## [1.1] - 2022-11-24
 
 ### Dependencies
 
 - Upgrade to .NET 7
-- Upgrade Angular template front ent dependencies to latest (Angular 13.1.2)
+- Upgrade Angular template front ent dependencies to latest (Angular 15)
 
 ## [1.0.2] - 2022-02-27
 
