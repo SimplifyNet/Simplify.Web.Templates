@@ -1,12 +1,9 @@
 {
-	"profiles":
-	{
-		"MyProject.WindowsServiceApi":
-		{
+	"profiles": {
+		"MyProject.WindowsServiceApi": {
 			"commandName": "Project",
 			"commandLineArgs": "console",
-			"environmentVariables":
-			{
+			"environmentVariables": {
 				"ASPNETCORE_ENVIRONMENT": "Development"
 			},
 			"launchBrowser": true,

@@ -6,11 +6,9 @@ using Simplify.Web.Model;
 
 namespace MyProject.SchedulerApi;
 
-public class WebApplicationStartup
+public class WebApplicationStartup(WebApplicationStartupSettings settings)
 {
-	private readonly WebApplicationStartupSettings _settings;
-
-	public WebApplicationStartup(WebApplicationStartupSettings settings) => _settings = settings;
+	private readonly WebApplicationStartupSettings _settings = settings;
 
 	public void Run(IJobArgs args)
 	{

@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2] - 2023-12-24
+
+### Changed
+
+- Formatting
+
+### Dependencies
+
+- Upgrade to .NET 8
+- Upgrade Angular template front ent dependencies to latest (Angular 17)
+
 ## [1.1] - 2022-11-24
 
 ### Dependencies

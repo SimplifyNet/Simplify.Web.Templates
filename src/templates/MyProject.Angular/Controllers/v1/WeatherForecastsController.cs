@@ -1,7 +1,7 @@
-using MyProject.Angular.Responses;
 using MyProject.Angular.ViewModels;
 using Simplify.Web;
 using Simplify.Web.Attributes;
+using Simplify.Web.Json.Responses;
 
 namespace MyProject.Angular.Controllers.v1;
 

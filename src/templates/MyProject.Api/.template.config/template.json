@@ -1,14 +1,14 @@
 {
 	"$schema": "http://json.schemastore.org/template",
 	"author": "Alexander Krylkov",
-	"classifications": ["Web",
+	"classifications": [
+		"Web",
 		"Simplify.Web"
 	],
 	"name": "Simplify.Web api template",
 	"identity": "Simplify.Web.Template.Api",
 	"shortName": "sweb.api",
-	"tags":
-	{
+	"tags": {
 		"language": "C#",
 		"type": "project"
 	},

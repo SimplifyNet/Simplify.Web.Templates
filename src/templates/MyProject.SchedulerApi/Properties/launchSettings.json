@@ -1,11 +1,8 @@
 {
-	"profiles":
-	{
-		"MyProject.SchedulerApi":
-		{
+	"profiles": {
+		"MyProject.SchedulerApi": {
 			"commandName": "Project",
-			"environmentVariables":
-			{
+			"environmentVariables": {
 				"ASPNETCORE_ENVIRONMENT": "Development"
 			},
 			"launchBrowser": true,

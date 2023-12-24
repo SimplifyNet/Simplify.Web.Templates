@@ -6,14 +6,9 @@ using Simplify.Web.Json.Responses;
 namespace MyProject.Api.Controllers.Api.v1;
 
 [Get("/api/v1/sampleOut")]
-public class SampleOutController : Controller
+public class SampleOutController(SampleModelFactory modelFactory) : Controller
 {
-	private readonly SampleModelFactory _modelFactory;
-
-	public SampleOutController(SampleModelFactory modelFactory)
-	{
-		_modelFactory = modelFactory;
-	}
+	private readonly SampleModelFactory _modelFactory = modelFactory;
 
 	public override ControllerResponse Invoke()
 	{
