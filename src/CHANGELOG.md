@@ -2,6 +2,10 @@
 
 ## [1.2] - 2023-12-24
 
+### Fixed
+
+- Files starting with dot is not included in package in Angular template (#70)
+
 ### Changed
 
 - Formatting
