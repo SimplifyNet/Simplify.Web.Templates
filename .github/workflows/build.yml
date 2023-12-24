@@ -28,7 +28,7 @@ jobs:
         run: dotnet build Simplify.Web.Templates.csproj --no-restore -c Release
 
       - name: Create Package
-        run: dotnet pack Simplify.Web.Templates.csproj --no-build -c Release -o ./publish -NoDefaultExcludes
+        run: dotnet pack Simplify.Web.Templates.csproj --no-build -c Release -o ./publish
 
       - name: Create packages artifact
         uses: actions/upload-artifact@v3
