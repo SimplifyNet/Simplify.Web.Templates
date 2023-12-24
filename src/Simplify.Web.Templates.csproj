@@ -1,19 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-
-		<PackageType>Template</PackageType>
-		<PackageVersion>1.2</PackageVersion>
-		<PackageId>Simplify.Web.Templates</PackageId>
 		<IsPackable>true</IsPackable>
+
+		<PackageVersion>1.2</PackageVersion>
+
+		<Title>Simplify.Web project templates</Title>
+		<Description>The Simplify.Web web framework project templates collection.</Description>
+		<Authors>Alexander Krylkov</Authors>
+		<Copyright>Licensed under LGPL</Copyright>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageType>Template</PackageType>
+		<PackageId>Simplify.Web.Templates</PackageId>
 		<PackageProjectUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</PackageProjectUrl>
 		<PackageIcon>icon.png</PackageIcon>
 		<RepositoryUrl>https://github.com/SimplifyNet/Simplify.Web.Templates</RepositoryUrl>
 		<RepositoryType>GIT</RepositoryType>
-
-		<Title>Simplify.Web project templates</Title>
-		<Authors>Alexander Krylkov</Authors>
-		<Description>The Simplify.Web web framework project templates collection.</Description>
 		<Tags>templates;simplify-web;web</Tags>
 
 		<PackageReleaseNotes>See https://github.com/SimplifyNet/Simplify.Web.Templates/blob/master/CHANGELOG.md for details</PackageReleaseNotes>
@@ -29,5 +31,6 @@
 	<ItemGroup>
 		<None Include="..\images\icon.png" Pack="true" Visible="false" PackagePath="" />
 		<None Include="CHANGELOG.md" Pack="true" PackagePath="\" />
+		<None Include="..\..\LICENSE.txt" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>
