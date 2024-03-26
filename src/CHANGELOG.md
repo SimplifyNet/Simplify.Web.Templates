@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1] - 2024-03-26
+
+### Dependencies
+
+- Angular dependencies bump to latest possible
+
 ## [1.2] - 2023-12-24
 
 ### Fixed

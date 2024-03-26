@@ -3,7 +3,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<IsPackable>true</IsPackable>
 
-		<PackageVersion>1.2</PackageVersion>
+		<PackageVersion>1.2.1</PackageVersion>
 
 		<Title>Simplify.Web project templates</Title>
 		<Description>The Simplify.Web web framework project templates collection.</Description>
