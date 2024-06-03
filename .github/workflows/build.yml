@@ -31,7 +31,8 @@ jobs:
         run: dotnet pack Simplify.Web.Templates.csproj --no-build -c Release -o ./publish
 
       - name: Create packages artifact
-        uses: actions/upload-artifact@v3
+        if: ${{ matrix.os == 'windows-latest' }}
+        uses: actions/upload-artifact@v4
         with:
           name: Packages
           path: ./src/publish/
