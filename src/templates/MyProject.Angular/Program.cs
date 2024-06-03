@@ -1,4 +1,11 @@
+using System.Text.Json;
 using Simplify.Web;
+using Simplify.Web.Responses;
+
+Json.DefaultOptions = new JsonSerializerOptions
+{
+	PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+};
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +32,7 @@ if (!app.Environment.IsDevelopment())
 	app.UseSpaStaticFiles();
 }
 
-app.UseSimplifyWebNonTerminal();
+app.UseSimplifyWebNonTerminal(true);
 
 // Production use: proxying from .NET to Angular
 if (!app.Environment.IsDevelopment())
