@@ -1,7 +1,8 @@
 ﻿using Simplify.Web;
 
-var app = WebApplication.CreateBuilder(args).Build();
+var app = WebApplication.CreateBuilder(args)
+	.Build();
 
-app.UseSimplifyWeb();
+app.UseSimplifyWeb(true);
 
-app.Run();
+await app.RunAsync();

@@ -9,4 +9,4 @@ DIContainer.Current
 
 using var handler = new BasicScheduler<WebApplicationStartup>(startupArgs: args);
 
-handler.Start(args);
+await handler.StartAsync(args);

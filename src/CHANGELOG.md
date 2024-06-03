@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.3.0] - Unreleased
+
+### Dependencies
+
+- Bump to Simplify.Web v5 with internal Json implementation instead of Simplify.Text.Json
+
+### Added
+
+- Language latest set
+- Scheduler install file
+
+### Changed
+
+- Switch to async handler and web app methods
+
 ## [1.2.1] - 2024-03-26
 
 ### Dependencies

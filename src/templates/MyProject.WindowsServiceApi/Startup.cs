@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Simplify.Web;
-using Simplify.Web.Json.Model.Binding;
-using Simplify.Web.Model;
 
 namespace MyProject.WindowsServiceApi;
 
@@ -13,10 +11,7 @@ public class Startup
 		if (env.IsDevelopment())
 			app.UseDeveloperExceptionPage();
 
-		// Enabling Simplify.Web JSON requests handling
-		HttpModelHandler.RegisterModelBinder<JsonModelBinder>();
-
-		app.UseSimplifyWebWithoutRegistrations();
+		app.UseSimplifyWeb();
 
 		Console.WriteLine("Service started.");
 	}

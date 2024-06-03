@@ -3,11 +3,11 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<IsPackable>true</IsPackable>
 
-		<PackageVersion>1.2.1</PackageVersion>
+		<PackageVersion>1.3</PackageVersion>
 
 		<Title>Simplify.Web project templates</Title>
 		<Description>The Simplify.Web web framework project templates collection.</Description>
-		<Authors>Alexander Krylkov</Authors>
+		<Authors>Simplify community</Authors>
 		<Copyright>Licensed under LGPL</Copyright>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageType>Template</PackageType>

@@ -6,15 +6,15 @@ using Simplify.Web.Attributes;
 namespace MyProject.Api.Controllers.Api.v1;
 
 [Post("/api/v1/sampleIn")]
-public class SampleInController : AsyncController<SampleModel>
+public class SampleInController : Controller2<SampleModel>
 {
-	public override async Task<ControllerResponse> Invoke()
+	public async Task<ControllerResponse> Invoke()
 	{
 		try
 		{
 			await ReadModelAsync();
 
-			Trace.WriteLine($"Object with message received: {Model.Message}");
+			Trace.TraceInformation($"Object with message received: {Model.Message}");
 
 			return NoContent();
 		}
