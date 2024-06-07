@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Web" Version="5.0-pre01" />
+		<PackageReference Include="Simplify.Web" Version="5.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Update="appsettings.Development.json">
