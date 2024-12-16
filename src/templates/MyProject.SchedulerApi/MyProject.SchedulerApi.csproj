@@ -8,7 +8,7 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Simplify.Scheduler" Version="1.5.*" />
-		<PackageReference Include="Simplify.Web" Version="5.0" />
+		<PackageReference Include="Simplify.Web" Version="5.1.*" />
 	</ItemGroup>
 	<ItemGroup>
 		<Content Update="appsettings.Development.json">

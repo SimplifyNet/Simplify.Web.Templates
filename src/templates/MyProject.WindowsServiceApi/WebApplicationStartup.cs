@@ -5,11 +5,9 @@ using Simplify.WindowsServices.Jobs;
 
 namespace MyProject.WindowsServiceApi;
 
-public class WebApplicationStartup
+public class WebApplicationStartup(WebApplicationStartupSettings settings)
 {
-	private readonly WebApplicationStartupSettings _settings;
-
-	public WebApplicationStartup(WebApplicationStartupSettings settings) => _settings = settings;
+	private readonly WebApplicationStartupSettings _settings = settings;
 
 	public void Run(IJobArgs args) =>
 		WebHost.CreateDefaultBuilder(((string[])args.StartupArgs)!)
