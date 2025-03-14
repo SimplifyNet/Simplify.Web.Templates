@@ -1,6 +1,8 @@
 {
 	"cSpell.words": [
+		"appsettings",
 		"ASPNETCORE",
+		"Bootstrapper",
 		"HOSTINGSTARTUPASSEMBLIES",
 		"HSTS",
 		"proxying"

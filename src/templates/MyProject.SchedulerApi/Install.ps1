@@ -1,6 +1,6 @@
 # Parameters
 
-$appName = "MyProject.SchedulerApir"
+$appName = "MyProject.SchedulerApi"
 $appPath = $PSScriptRoot
 $exepath = $appPath + "\" + $appName + ".exe"
 $description = "MyProject.SchedulerApi service"

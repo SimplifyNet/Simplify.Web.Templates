@@ -1,5 +1,6 @@
 using System.Text.Json;
 using Simplify.Web;
+using Simplify.Web.Bootstrapper;
 using Simplify.Web.Responses;
 
 Json.DefaultOptions = new JsonSerializerOptions
@@ -9,33 +10,15 @@ Json.DefaultOptions = new JsonSerializerOptions
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddSpaStaticFiles(configuration => configuration.RootPath = "ClientApp");
-
 var app = builder.Build();
 
-if (!app.Environment.IsDevelopment())
-{
-	//	Configure the HTTP request pipeline.
+app.UseDefaultFiles();
+app.MapStaticAssets();
 
-	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-	app.UseHsts();
+app.UseHttpsRedirection();
 
-	app.UseHttpsRedirection();
-}
+app.UseSimplifyWeb(true);
 
-// Production use: proxying from .NET to Angular
-if (!app.Environment.IsDevelopment())
-{
-	app.UseStaticFiles();
-	app.UseSpaStaticFiles();
-}
-
-app.UseSimplifyWebNonTerminal(true);
-
-// Production use: proxying from .NET to Angular
-if (!app.Environment.IsDevelopment())
-	app.UseSpa(spa => spa.Options.SourcePath = "ClientApp");
+BootstrapperFactory.ContainerProvider.Verify();
 
 await app.RunAsync();

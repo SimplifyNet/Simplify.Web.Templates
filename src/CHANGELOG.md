@@ -1,11 +1,27 @@
 # Changelog
 
+## [1.5.0] - 2025-03-14
+
+### Dependencies
+
+- Upgrade to .NET 9
+- Upgrade Angular template front-end dependencies to Angular 18
+- WindowsServiceApi Microsoft.AspNetCore bump to 2.3
+
+### Changed
+
+- Upgrade Angular template back-end app to new SpaProxy and app
+
+### Fixed
+
+- Scheduler install script typo
+
 ## [1.4.0] - 2024-12-16
 
 ### Dependencies
 
 - Simplify.Web bump to 5.1 with floating version set
-- Upgrade Angular template front ent dependencies to Angular 17.3
+- Upgrade Angular template front-end dependencies to Angular 17.3
 
 ## [1.3.0] - 2024-06-07
 
@@ -41,14 +57,14 @@
 ### Dependencies
 
 - Upgrade to .NET 8
-- Upgrade Angular template front ent dependencies to latest (Angular 17)
+- Upgrade Angular template front-end dependencies to latest (Angular 17)
 
 ## [1.1] - 2022-11-24
 
 ### Dependencies
 
 - Upgrade to .NET 7
-- Upgrade Angular template front ent dependencies to latest (Angular 15)
+- Upgrade Angular template front-end dependencies to latest (Angular 15)
 
 ## [1.0.2] - 2022-02-27
 
@@ -60,7 +76,7 @@ Upgrade Angular package-lock
 
 ### Dependencies
 
-Upgrade Angular template front ent dependencies to latest (Angular 13.1.2)
+Upgrade Angular template front-end dependencies to latest (Angular 13.1.2)
 
 ## [1.0.0] - 2022-01-16
 

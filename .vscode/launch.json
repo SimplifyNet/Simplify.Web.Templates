@@ -6,7 +6,7 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build",
-			"program": "${workspaceFolder}/src/templates/MyProject.Angular/bin/Debug/net8.0/MyProject.Angular.dll",
+			"program": "${workspaceFolder}/src/templates/MyProject.Angular/bin/Debug/net9.0/MyProject.Angular.dll",
 			"cwd": "${workspaceFolder}/src/templates/MyProject.Angular",
 			"internalConsoleOptions": "openOnSessionStart",
 			"serverReadyAction": {
@@ -23,7 +23,7 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build",
-			"program": "${workspaceFolder}/src/templates/MyProject.Angular/bin/Debug/net8.0/MyProject.Angular.dll",
+			"program": "${workspaceFolder}/src/templates/MyProject.Angular/bin/Debug/net9.0/MyProject.Angular.dll",
 			"cwd": "${workspaceFolder}/src/templates/MyProject.Angular",
 			"internalConsoleOptions": "openOnSessionStart",
 			"serverReadyAction": {
@@ -41,8 +41,8 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build",
-			"program": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net8.0/MyProject.Api.dll",
-			"cwd": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net8.0/",
+			"program": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net9.0/MyProject.Api.dll",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.Api/bin/Debug/net9.0/",
 			"internalConsoleOptions": "openOnSessionStart",
 			"serverReadyAction": {
 				"action": "openExternally",
@@ -58,8 +58,8 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build",
-			"program": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net8.0/MyProject.Minimal.dll",
-			"cwd": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net8.0/",
+			"program": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net9.0/MyProject.Minimal.dll",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.Minimal/bin/Debug/net9.0/",
 			"internalConsoleOptions": "openOnSessionStart",
 			"serverReadyAction": {
 				"action": "openExternally",
@@ -75,8 +75,8 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "Build",
-			"program": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net8.0/MyProject.SchedulerApi.dll",
-			"cwd": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net8.0/",
+			"program": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net9.0/MyProject.SchedulerApi.dll",
+			"cwd": "${workspaceFolder}/src/templates/MyProject.SchedulerApi/bin/Debug/net9.0/",
 			"internalConsoleOptions": "openOnSessionStart",
 			"serverReadyAction": {
 				"action": "openExternally",
