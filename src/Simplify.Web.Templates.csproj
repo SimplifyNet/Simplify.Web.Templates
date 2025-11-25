@@ -3,7 +3,7 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<IsPackable>true</IsPackable>
 
-		<PackageVersion>1.6</PackageVersion>
+		<PackageVersion>1.6.1</PackageVersion>
 
 		<Title>Simplify.Web project templates</Title>
 		<Description>The Simplify.Web web framework project templates collection.</Description>

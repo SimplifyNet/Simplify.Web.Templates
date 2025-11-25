@@ -6,5 +6,8 @@
 		"HOSTINGSTARTUPASSEMBLIES",
 		"HSTS",
 		"proxying"
+	],
+	"dotrush.roslyn.projectOrSolutionFiles": [
+		"./src/Simplify.Web.Templates.sln"
 	]
 }

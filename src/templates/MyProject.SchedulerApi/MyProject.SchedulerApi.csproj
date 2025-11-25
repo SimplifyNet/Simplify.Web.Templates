@@ -7,7 +7,7 @@
 		<Description>Simplify.Web API hosted inside Simplify.Scheduler application</Description>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Simplify.Scheduler" Version="1.5.*" />
+		<PackageReference Include="Simplify.Scheduler" Version="1.6.*" />
 		<PackageReference Include="Simplify.Web" Version="5.1.*" />
 	</ItemGroup>
 	<ItemGroup>

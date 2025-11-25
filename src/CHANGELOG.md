@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.1] - 2025-11-25
+
+### Dependencies
+
+- Simplify.WindowsServices bump to 2.15.*
+- Upgrade Angular template front-end dependencies to Angular 20.3
+- Simplify.Scheduler bump to 1.6.*
+
 ## [1.6.0] - 2025-08-03
 
 ### Dependencies
