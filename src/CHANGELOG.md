@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.0] - 2026-01-17
+
+### Dependencies
+
+- Upgrade Angular template front-end dependencies to Angular 21.1
+
 ## [1.6.3] - 2025-12-02
 
 ### Dependencies
