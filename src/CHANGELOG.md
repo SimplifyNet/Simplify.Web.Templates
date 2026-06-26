@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.8.0] - 2026-06-26
+
+### Dependencies
+
+- Upgrade to .NET 10
+- Simplify.Web bump to 5.3.*
+- Simplify.Scheduler bump to 1.7.*
+- Simplify.WindowsServices bump to 2.16.*
+- Upgrade Angular template front-end dependencies to Angular 22.0.3
+
 ## [1.7.0] - 2026-01-17
 
 ### Dependencies

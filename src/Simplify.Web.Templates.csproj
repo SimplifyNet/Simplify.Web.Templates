@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net9.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<IsPackable>true</IsPackable>
 
-		<PackageVersion>1.7</PackageVersion>
+		<PackageVersion>1.8</PackageVersion>
 
 		<Title>Simplify.Web project templates</Title>
 		<Description>The Simplify.Web web framework project templates collection.</Description>
