@@ -13,13 +13,13 @@ Visual studio project templates for Simplify.Web web framework.
 dotnet new -i Simplify.Web.Templates
 ```
 
-| Template                               | Short Name              |
-| :------------------------------------- | :---------------------- |
-| Angular template                       | sweb.angular            |
-| Api template                           | sweb.api                |
-| Minimal template                       | sweb.minimal            |
-| Windows service hosted api template    | sweb.api.windowsservice |
-| Simplify.Scheduler hosted api template | sweb.api.scheduler      |
+| Template                               | Short Name              | Description |
+| :------------------------------------- | :---------------------- | :---------- |
+| Angular template                       | sweb.angular            | Simplify.Web API backend with an Angular frontend. |
+| Api template                           | sweb.api                | Simplify.Web API project with controllers and examples. |
+| Minimal template                       | sweb.minimal            | Minimal Simplify.Web API project. |
+| Simplify.Scheduler hosted api template | sweb.api.scheduler      | Background service template hosting Simplify.Web as one of the scheduled tasks. Fully cross-platform — runs on Linux, Windows, and Docker. |
+| Windows service hosted api template    | sweb.api.windowsservice | Background service template hosting Simplify.Web within a Windows Service. Targets .NET Framework and is tied to Windows infrastructure. |
 
 ## Project creation example
 
