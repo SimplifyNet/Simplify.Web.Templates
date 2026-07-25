@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.9.0] - 2026-07-25
+
+### Dependencies
+
+- Simplify.Web bump to 5.7.*
+- Upgrade Angular template front-end dependencies to Angular 22.0.8
+- Upgrade piscina to 5.3.0, http-proxy-middleware to 4.2.0
+- Upgrade Microsoft.AspNetCore to 2.3.11
+
 ## [1.8.0] - 2026-06-26
 
 ### Dependencies
