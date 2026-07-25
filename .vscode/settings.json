@@ -8,6 +8,6 @@
 		"proxying"
 	],
 	"dotrush.roslyn.projectOrSolutionFiles": [
-		"./src/Simplify.Web.Templates.sln"
+		"./src/Simplify.Web.Templates.slnx"
 	]
 }

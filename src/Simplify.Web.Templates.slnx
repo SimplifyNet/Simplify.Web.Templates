@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="templates\MyProject.Minimal\MyProject.Minimal.csproj" />
+  <Project Path="templates\MyProject.Api\MyProject.Api.csproj" />
+  <Project Path="templates\MyProject.WindowsServiceApi\MyProject.WindowsServiceApi.csproj" />
+  <Project Path="templates\MyProject.Angular\MyProject.Angular.csproj" />
+  <Project Path="templates\MyProject.SchedulerApi\MyProject.SchedulerApi.csproj" />
+</Solution>
