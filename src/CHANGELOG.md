@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.9.1] - 2026-09-03
+
+### Dependencies
+
+- Upgrade Angular template front-end dependencies to Angular 22.1.5
+
 ## [1.9.0] - 2026-07-25
 
 ### Dependencies
